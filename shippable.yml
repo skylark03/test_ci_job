@@ -1,0 +1,15 @@
+resources:
+  - name: test_ci_gitrepo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: skylark03/test_ci_repo
+      branch: master
+
+jobs:
+  - name: my_ci_job
+    type: runSh
+    steps:
+      - IN: test_ci_gitRepo
+      - TASK:
+        - script: echo "Hello, World!"
