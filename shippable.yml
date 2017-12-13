@@ -10,6 +10,6 @@ jobs:
   - name: my_ci_job
     type: runSh
     steps:
-      - IN: test_ci_gitRepo
+      - IN: test_ci_gitrepo
       - TASK:
         - script: echo "Hello, World!"
