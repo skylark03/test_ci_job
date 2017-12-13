@@ -2,6 +2,7 @@ resources:
   - name: test_ci_gitrepo
     type: gitRepo
     integration: github
+    buildOnPullRequest: true
     pointer:
       sourceName: skylark03/test_ci_repo
       branch: master
