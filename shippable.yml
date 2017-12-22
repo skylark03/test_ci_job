@@ -6,6 +6,9 @@ resources:
       sourceName: skylark03/test_ci_repo
       branch: master
       buildOnPullRequest: true
+  - name: myaws
+    type: integration
+    integration: myaws
 
 jobs:
   - name: my_ci_job
