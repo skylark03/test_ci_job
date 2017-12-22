@@ -6,11 +6,11 @@ resources:
       sourceName: skylark03/test_ci_repo
       branch: master
       buildOnPullRequest: true
-  - name: myaws
-    type: cliConfig
-    integration: myaws
-    pointer:
-      region: us-east-1
+  #- name: myaws
+  #  type: cliConfig
+  #  integration: myaws
+  #  pointer:
+  #    region: us-east-1
 
 jobs:
   - name: my_ci_job
